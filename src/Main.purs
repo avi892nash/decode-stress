@@ -2,12 +2,12 @@ module Main where
 
 import Prelude
 
-import Avinash (Avinash(..), json)
+import Avinash (Avinash(..))
 import Control.Monad.Except (runExcept)
 import Data.Either (Either)
 import Effect (Effect)
 import Effect.Console (log)
-import Foreign.Generic (decode)
+import Foreign.Generic 
 
 foreign import json :: Foreign
 
