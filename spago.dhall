@@ -16,10 +16,16 @@ to generate this file without the comments in this block.
   , "effect"
   , "either"
   , "f"
+  , "foldable-traversable"
   , "foreign"
+  , "identity"
   , "maybe"
   , "prelude"
+  , "record"
   , "transformers"
+  , "tuples"
+  , "typelevel-prelude"
+  , "unsafe-coerce"
   ]
 , packages = ./packages.dhall
 , sources = [ "src/**/*.purs", "test/**/*.purs" ]

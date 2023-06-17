@@ -18,14 +18,16 @@
         <![endif]-->
         
         <script type="module">
+            import { newMain } from "./index.js"
+            import { json } from "./src/Main.js"
+            console.log(newMain(json)());
+            // import { main } from "./manualDecode.js";
+            // import { json } from "./src/Main.js";
+            // let time = new Date().getTime();
+            // let a = main(json);
 
-            import { main } from "./index.js";
-
-            performance.mark("test_avinash");
-            let a = main();
-            performance.mark("test_avinash_end");
-            console.log(a);
-            console.log(performance.measure("test_avinash", "test_avinash_end").duration);
+            // console.log(new Date().getTime() - time);
+            // console.log(a);
         </script>
     </body>
 </html>
